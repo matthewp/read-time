@@ -12,6 +12,12 @@ Install with [Bower](http://bower.io/):
 bower install --save read-time
 ```
 
+Import into your page
+
+```html
+<link rel="import" href="bower_components/read-time/read-time.html">
+```
+
 ## Usage
 
 `<read-time>` takes a `selector` that contains the article you want to calculate the read time for. For example:
