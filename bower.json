@@ -1,6 +1,6 @@
 {
-  "name": "stub",
-  "description": "",
+  "name": "read-time",
+  "description": "Tells you how long it will take to read an article",
   "version": "0.1.0",
   "keywords": [
     "web-components",    

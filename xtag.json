@@ -1,8 +1,8 @@
 {
-	"name": "stub",
-	"tagName": "x-stub",
+	"name": "read-time",
+	"tagName": "read-time",
 	"version": "0.1.0",
-	"author": "you",
+	"author": "The Kid Frankenstein Threw in a Pond",
 	"description": "",
 	"demo": "demo/index.html",
 	"categories": [],
