@@ -1,4 +1,4 @@
-# <read-time>
+# &lt;read-time&gt;
 
 A component for calculating how long it will take to read an article.
 
