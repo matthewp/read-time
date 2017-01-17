@@ -1,5 +1,5 @@
 {
-  "name": "@matthewp/read-time",
+  "name": "read-time-wc",
   "main": "read-time.html",
   "version": "1.0.0",
   "files": [
