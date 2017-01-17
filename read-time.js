@@ -23,10 +23,16 @@
       this._selector = this.getAttribute('selector') || null;
       this._wpm = Number(this.getAttribute('wpm') || 200);
       this._connected = false;
-      this.style.display = 'inline';
+      if(this.attachShadow) {
+        this.attachShadow({ mode: 'open' });
+        this._root = this.shadowRoot;
+      } else {
+        this._root = this;
+      }
     }
 
     connectedCallback() {
+      this.style.display = 'inline';
       this._connected = true;
       this._setTime();
       if(!this._selectedElement()) {
@@ -112,7 +118,7 @@
 
     _setTime() {
       if(this._connected) {
-        this.textContent = this.time;
+        this._root.textContent = this.time;
       }
     }
   }
