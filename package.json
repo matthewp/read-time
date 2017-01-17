@@ -3,7 +3,6 @@
   "main": "read-time.html",
   "version": "1.0.0",
   "files": [
-    "read-time.css",
     "read-time.js",
     "read-time.html"
   ]

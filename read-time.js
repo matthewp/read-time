@@ -23,6 +23,7 @@
       this._selector = this.getAttribute('selector') || null;
       this._wpm = Number(this.getAttribute('wpm') || 200);
       this._connected = false;
+      this.style.display = 'inline';
     }
 
     connectedCallback() {
