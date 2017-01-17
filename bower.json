@@ -1,16 +1,11 @@
 {
   "name": "read-time",
   "description": "Tells you how long it will take to read an article",
-  "version": "0.1.0",
   "keywords": [
-    "web-components",    
-    "x-tag"
+    "web-components"
   ],
   "main": [
-    "src/main.js",
-    "src/main.css"
-  ],
-  "dependencies": {
-    "x-tag-core": "*"
-  }
+    "read-time.js",
+    "read-time.css"
+  ]
 }
