@@ -1,7 +1,7 @@
 {
-  "name": "read-time",
+  "name": "@matthewp/read-time",
   "main": "read-time.html",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "files": [
     "read-time.css",
     "read-time.js",
