@@ -6,8 +6,9 @@
   ],
   "license": "BSD-2-Clause",
   "keywords": [
-    "web",
-    "components"
+    "web-components",
+    "custom-element",
+    "vanilla-js"
   ],
   "main": [
     "read-time.js",
