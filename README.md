@@ -1,5 +1,8 @@
 # &lt;read-time&gt;
 
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/matthewp/read-time)
+[![npm version](https://img.shields.io/npm/v/read-time-wc.svg?style=flat-square)](https://www.npmjs.com/package/read-time-wc)
+
 A component for calculating how long it will take to read an article.
 
 ![demo](http://i.imgur.com/UC3Oumk.png)
