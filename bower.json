@@ -1,8 +1,13 @@
 {
   "name": "read-time",
   "description": "Tells you how long it will take to read an article",
+  "authors": [
+    "Matthew Phillips <matthew@matthewphillips.info>"
+  ],
+  "license": "BSD-2-Clause",
   "keywords": [
-    "web-components"
+    "web",
+    "components"
   ],
   "main": [
     "read-time.js",

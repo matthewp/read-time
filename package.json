@@ -1,7 +1,17 @@
 {
   "name": "read-time-wc",
   "main": "read-time.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewp/read-time.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/matthewp/read-time/issues"
+  },
+  "homepage": "https://github.com/matthewp/read-time#readme",
   "files": [
     "read-time.js",
     "read-time.html"
