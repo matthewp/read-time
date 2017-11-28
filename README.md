@@ -9,16 +9,16 @@ A component for calculating how long it will take to read an article.
 
 ## Install
 
-Install with [Bower](http://bower.io/):
+Install with npm or yarn:
 
 ```shell
-bower install --save read-time
+yarn add read-time-wc
 ```
 
 Import into your page
 
 ```html
-<link rel="import" href="bower_components/read-time/read-time.html">
+<script type="module" href="./node_modules/read-time-wc/read-time.js"></script>
 ```
 
 ## Usage

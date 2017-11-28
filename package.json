@@ -13,7 +13,6 @@
   },
   "homepage": "https://github.com/matthewp/read-time#readme",
   "files": [
-    "read-time.js",
-    "read-time.html"
+    "read-time.js"
   ]
 }
