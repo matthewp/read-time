@@ -1,3 +1,18 @@
+const template = document.createElement('template');
+template.innerHTML = /* html */ `
+  <style>
+    :host {
+      display: inline;
+    }
+  </style>
+  <span id="root"></span>
+  <slot></slot>
+`;
+
+function clone() {
+  return document.importNode(template.content, true);
+}
+
 class ReadTime extends HTMLElement {
   static get observedAttributes() {
     return ['selector', 'wpm'];
@@ -8,20 +23,20 @@ class ReadTime extends HTMLElement {
     this._selector = this.getAttribute('selector') || null;
     this._wpm = Number(this.getAttribute('wpm') || 200);
     this._connected = false;
-    if(this.attachShadow) {
-      this.attachShadow({ mode: 'open' });
-      this._root = this.shadowRoot;
-    } else {
-      this._root = this;
-    }
+    this._root = null;
+    this.attachShadow({ mode: 'open' });
   }
 
   connectedCallback() {
-    this.style.display = 'inline';
+    if(!this._connected) {
+      this.shadowRoot.appendChild(clone());
+      this._root = this.shadowRoot.getElementById('root');
+    }
+
     this._connected = true;
     this._setTime();
     if(!this._selectedElement()) {
-      var win = this.ownerDocument.defaultView;
+      let win = this.ownerDocument.defaultView;
       win.addEventListener('load', function onload(){
         win.removeEventListener('load', onload);
         this._setTime();
@@ -87,13 +102,12 @@ class ReadTime extends HTMLElement {
    * The number of words contained within the article
    */
   get words() {
-    var selector = this.selector;
-    var element = this._selectedElement();
+    let element = this._selectedElement();
     if(!element) {
       return 0;
     }
-    var text = element.textContent;
-    var words = text.split(' ').length;
+    let text = element.textContent;
+    let words = text.split(' ').length;
     return words;
   }
 
